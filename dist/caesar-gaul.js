@@ -1,0 +1,35 @@
+// User-supplied modern retelling; source and exact historical wording unverified.
+export const caesarGaul = {
+ readerLabel:'Read this version without annotations',
+ id:'caesar-gaul',title:'Before facing Ariovistus in Gaul',speaker:'Julius Caesar',date:'58 BC · modern retelling of Gallic War I.40',
+ context:'At Vesontio during the campaign in Gaul, fear of Ariovistus’s forces spreads through Caesar’s army. He calls together his officers and challenges their reluctance to march.',
+ edition:'User-supplied version, reproduced in full with obvious transcription errors and punctuation cleaned up. Its author and source have not been verified, so it is not established whether this is a translation or adaptation. The ancient account is linked for comparison; neither version is a verbatim transcript.',
+ source:'https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Caesar/Gallic_War/1B*.html#40',
+ note:'The colors mark rhetorical functions in this retelling, not six original divisions. Device and emotion notes analyze this version’s language. The first sentence includes a narrator’s introduction to the speech.',
+ sections:[
+  {part:0,title:'Challenge their right to question command',
+   text:'Instead of negotiating or promising them rewards as other generals might have, he struck at the centurions with a furious passion—“Who do you think you are,” he demanded, “to question where I am leading you? You are Roman soldiers, part of the greatest army the world has ever seen. Your job is to obey the orders of your commander and lead your men into whatever battle I deem fit.',
+   explanation:'After the narrator’s introduction, the retelling opens with a rebuke. It links obedience to the soldiers’ identity and makes questioning command seem incompatible with that identity.',
+   devices:[{name:'Put the audience on the defensive · rhetorical question',quote:'Who do you think you are',mechanism:'The question challenges the listeners’ standing rather than seeking information. It shifts attention from their concerns to their right to raise them.',tryIt:'Write a challenging opening question, then an inviting version of it. Compare which audience each could reach.'},{name:'Magnify a shared identity · hyperbole',quote:'the greatest army the world has ever seen',mechanism:'The sweeping superlative elevates the group and increases the pressure to act consistently with that image. This wording belongs to the retelling.',tryIt:'Praise a group’s real strengths, then compare the effect of a restrained claim with an exaggerated one.'}]},
+  {part:4,title:'Allow the possibility of battle, then challenge fear',
+   text:'You might not even have to fight Ariovistus if the fool will listen to reason—but even if you do, what are you afraid of?',
+   explanation:'The retelling first suggests that fighting might be avoided, then accepts its possibility without accepting fear as the conclusion.',
+   devices:[{name:'Grant the difficulty · concession',quote:'but even if you do, what are you afraid of?',mechanism:'The concession makes room for the feared possibility before asking whether it warrants retreat.',tryIt:'Acknowledge a real difficulty with “even if,” then explain why your proposal remains worth considering.'}]},
+  {part:3,title:'Answer fear with victories they recognize',
+   text:'Marius destroyed a much larger German army in the time of your grandfathers. And you yourselves just conquered the Helvetii, a tribe that had defeated Germans countless times before.',
+   explanation:'An inherited victory and the soldiers’ own recent success become reasons for confidence. The comparison suggests that an army able to beat the Helvetii should be able to face opponents the Helvetii had beaten; it does not guarantee that result.',
+   devices:[{name:'Make precedent support the claim · historical example',quote:'Marius destroyed a much larger German army in the time of your grandfathers.',mechanism:'A remembered victory offers an answer to the idea that the enemy cannot be beaten. This is an argumentative technique rather than a figure of speech.',tryIt:'Use a relevant past success to support a proposal, then name one way the present situation differs.'}]},
+  {part:4,title:'Make the enemy seem less formidable',
+   text:'Ariovistus is a coward who hides in swamps and strikes like a bandit out of the woods. He will collapse before our army on the battlefield.',
+   explanation:'The retelling replaces the image of a powerful opponent with that of a furtive attacker who cannot withstand open battle. This is a hostile characterization and prediction, not independent evidence about Ariovistus.',
+   devices:[{name:'Diminish through comparison · simile',quote:'strikes like a bandit out of the woods',mechanism:'The comparison recasts military success as opportunistic ambush, reducing the opponent’s apparent stature.',tryIt:'Compare two descriptions of the same opponent. Identify what each comparison leads the listener to assume, and whether that assumption is justified.'}]},
+  {part:2,title:'Announce the immediate decision',
+   text:'You won’t follow me? Fine, we’re packing up and marching against Ariovistus tonight.',
+   explanation:'He voices the possible refusal and answers with a decision and deadline. This is a statement of action rather than a formal roadmap of the argument.',
+   devices:[{name:'Voice the objection, then answer · hypophora',quote:'You won’t follow me? Fine, we’re packing up and marching against Ariovistus tonight.',mechanism:'The imagined exchange lets the speaker control both the objection and the response, turning hesitation into an immediate choice.',tryIt:'State a real objection as a question and answer it directly. Check that you have addressed the concern rather than merely dismissed it.'}]},
+  {part:5,title:'Make the Tenth Legion the standard to match',
+   text:'If you don’t know the meaning of Roman duty and honor—if you are cowards—then stay here. I’ll march with the tenth legion alone, brave lads who have always stood by me, and we’ll conquer the Germans on our own while you lot crawl home in disgrace.”',
+   explanation:'The close opposes a brave, loyal group to those who would stay behind. It appeals to reputation and rivalry while making the speaker’s resolve sound independent of wider support.',
+   devices:[{name:'Contrast two futures · antithesis',quote:'we’ll conquer the Germans on our own while you lot crawl home in disgrace',mechanism:'Victory and disgrace are set against each other, framing participation as a test of identity. The contrast leaves no space for reasonable caution.',tryIt:'Write two possible outcomes of a decision in parallel clauses. Make their differences clear without caricaturing either choice.'}]}
+ ]
+};
