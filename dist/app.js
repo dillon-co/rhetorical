@@ -29,7 +29,7 @@ function render(){
 }
 function heading(title,description,action='') {return `<header class="page-heading"><div><h1>${title}</h1><p>${description}</p></div>${action}</header>`;}
 function deviceOptions(){
- return devices.map(d=>`<option value="${d.id}" ${d.id===deviceId?'selected':''}>${coreDevices.has(d.id)?'★ ':''}${esc(d.title)}</option>`).join('');
+ return [...devices].sort((a,b)=>Number(coreDevices.has(b.id))-Number(coreDevices.has(a.id))).map(d=>`<option value="${d.id}" ${d.id===deviceId?'selected':''}>${coreDevices.has(d.id)?'★ ':''}${esc(d.title)}</option>`).join('');
 }
 function workshopDeviceContent(){
  const d=devices.find(item=>item.id===deviceId);

@@ -1,6 +1,6 @@
 // Bump this version whenever a bundled file changes. Updates wait for open sessions to close.
 const PREFIX = 'rhetoric-offline-';
-const CACHE = PREFIX + 'v3';
+const CACHE = PREFIX + 'v4';
 const ASSETS = [
   './index.html','./style.css','./app.js','./theme.js','./pwa.js',
   './content.js','./model.js','./arrangement.js','./studies.js',

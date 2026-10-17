@@ -13,7 +13,11 @@ test('device subjects persist with drafts and can change independently',async()=
  const click=dataset=>events.click({target:{closest:()=>({dataset})}});
  try{
   await import('../dist/app.js');
+  const expected=[...devices.filter(d=>coreDevices.has(d.id)),...devices.filter(d=>!coreDevices.has(d.id))].map(d=>d.id);
+  const optionIds=()=>[...root.innerHTML.matchAll(/<option value="([^"]+)"/g)].map(match=>match[1]);
+  assert.deepEqual(optionIds(),expected);
   click({page:'devices'});
+  assert.deepEqual(optionIds(),expected);
   assert.equal((root.innerHTML.match(/<option[^>]*>★ /g)||[]).length,7);
   for(const id of coreDevices)assert.ok(devices.some(d=>d.id===id));
   const first=JSON.parse(saved).deviceDrafts.chiasmus.topic;
