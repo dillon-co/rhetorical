@@ -14,7 +14,7 @@ test('device subjects persist with drafts and can change independently',async()=
  try{
   await import('../dist/app.js');
   click({page:'devices'});
-  assert.equal((root.innerHTML.match(/★ Start here · /g)||[]).length,7);
+  assert.equal((root.innerHTML.match(/<option[^>]*>★ /g)||[]).length,7);
   for(const id of coreDevices)assert.ok(devices.some(d=>d.id===id));
   const first=JSON.parse(saved).deviceDrafts.chiasmus.topic;
   assert.ok(topics.includes(first));
