@@ -23,7 +23,7 @@ test('offline install includes every app asset and valid installation icons',asy
 test('offline requests use the snapshot and activation keeps unrelated caches',async()=>{
  const events={},deleted=[];let claimed=false,network=0;
  const cache={match:async request=>request==='./index.html'?'PAGE':request.url.endsWith('app.js')?'SCRIPT':undefined};
- runInNewContext(code,{URL,fetch:async()=>{network++;return 'NETWORK';},self:{location:{origin:'https://example.test'},clients:{claim:async()=>claimed=true},addEventListener:(name,fn)=>events[name]=fn},caches:{open:async()=>cache,keys:async()=>['rhetoric-offline-v0','rhetoric-offline-v2','other-app'],delete:async key=>deleted.push(key)}});
+ runInNewContext(code,{URL,fetch:async()=>{network++;return 'NETWORK';},self:{location:{origin:'https://example.test'},clients:{claim:async()=>claimed=true},addEventListener:(name,fn)=>events[name]=fn},caches:{open:async()=>cache,keys:async()=>['rhetoric-offline-v0','rhetoric-offline-v3','other-app'],delete:async key=>deleted.push(key)}});
  let ready;events.activate({waitUntil:p=>ready=p});await ready;
  assert.deepEqual(deleted,['rhetoric-offline-v0']);assert.ok(claimed);
  async function request(url,mode='cors',method='GET'){
